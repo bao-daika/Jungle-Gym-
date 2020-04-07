@@ -120,16 +120,17 @@ section {
 }
 
 .progress-container {
-  height: 500px;
-  width: 20px;
+  
+  height: 8px;
   background: #ccc;
-  margin: 0 1em;
-  top: 15rem;
-  position: sticky 
+  margin:0 1em;
 }
 
 .progress-bar {
+  
+  height: 8px;
   background: #4caf50;
+  width: 0%;
 }
 .wrapper{
   display: flex;
@@ -437,26 +438,11 @@ section{
   margin: 10px;
 }
 
-.box, a:hover{  
+.box, .nested > a:hover{  
   transition-property: all, boder-radius;
   transition-duration: 1s;
   transition-timing-function: ease-in;
   background: rgb(105, 223, 223);
   border-radius: 30%;
   padding: 12px;
-}
-
-section > p{
-  /* background: red; */
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite
-}
-
-@keyframes example {
-  0%   {background:  rgb(105, 223, 223);}
-      25%  {background: yellow;}
-      50%  {background: #fcba03}
-      75%  {background: lawngreen;}
-      100% {background:  rgb(105, 223, 223);}
 }
