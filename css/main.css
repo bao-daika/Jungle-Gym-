@@ -5,6 +5,7 @@ header {
   align-content: center;
   text-align: center;
   text-height: 100px;
+  
 }
 
 main {
@@ -12,6 +13,7 @@ main {
   width: auto;
   text-align: center;
   align-content: center;
+  background: rgb(240, 238, 238)
 }
 
 footer {
@@ -118,17 +120,17 @@ section {
 }
 
 .progress-container {
-  width: 100%;
-  height: 8px;
+  height: 500px;
+  width: 20px;
   background: #ccc;
+  margin: 0 1em;
+  top: 15rem;
+  position: sticky 
 }
 
 .progress-bar {
-  height: 8px;
   background: #4caf50;
-  width: 0%;
 }
-
 .wrapper{
   display: flex;
   flex-direction: column;
@@ -148,11 +150,10 @@ section {
   grid-gap: 1em;
   grid-auto-rows: auto;
   list-style-type: none;
+  padding: 1em;
   
 }
-.wrapper > div{
-  padding: 1em;
-}
+
 
 .nested > div{
   padding: 1em;
@@ -246,9 +247,9 @@ margin-bottom: 0;
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  {
+  /* {
     width: 100%;
-  }
+  } */
   .myImage1{
     height: 80px;
   }
@@ -422,4 +423,40 @@ margin-bottom: 0;
   opacity: 0.0;
 }
 
+}
+strong{
+  color: rgb(84, 84, 92);
+}
+p{
+  padding: 10px 0;
+
+}
+section{
+  transition-duration: 1s;
+  background: white;
+  margin: 10px;
+}
+
+.box, a:hover{  
+  transition-property: all, boder-radius;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  background: rgb(105, 223, 223);
+  border-radius: 30%;
+  padding: 12px;
+}
+
+section > p{
+  /* background: red; */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite
+}
+
+@keyframes example {
+  0%   {background:  rgb(105, 223, 223);}
+      25%  {background: yellow;}
+      50%  {background: #fcba03}
+      75%  {background: lawngreen;}
+      100% {background:  rgb(105, 223, 223);}
 }
